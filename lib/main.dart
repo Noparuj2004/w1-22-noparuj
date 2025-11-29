@@ -251,7 +251,7 @@ class SecondPage extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Container(
-          padding: EdgeInsets.all(10),
+          padding: EdgeInsets.symmetric(horizontal: 10, vertical: 20),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -263,8 +263,8 @@ class SecondPage extends StatelessWidget {
                     child: ClipOval(
                       child: Image.network(
                         "https://images.unsplash.com/photo-1557008075-7f2c5efa4cfd?q=80&w=697&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                        width: 100,
-                        height: 100,
+                        width: 80,
+                        height: 80,
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -297,9 +297,17 @@ class SecondPage extends StatelessWidget {
                         ),
                       ),
                       Container(
+                        decoration: BoxDecoration(
+                          border: Border.symmetric(
+                            vertical: BorderSide(
+                              color: Colors.grey.shade300,
+                              width: 2,
+                            ),
+                          ),
+                        ),
                         padding: EdgeInsets.symmetric(
                           vertical: 30,
-                          horizontal: 5,
+                          horizontal: 10,
                         ),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.center,
@@ -352,10 +360,67 @@ class SecondPage extends StatelessWidget {
               ),
               Container(
                 padding: EdgeInsets.all(10),
-                child: Row(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text('Noparuj Witkhajorn', style: TextStyle(fontSize: 20)),
-                    Icon(Icons.verified, color: Colors.blue),
+                    Row(
+                      children: [
+                        Text(
+                          'Noparuj Witkhajorn',
+                          style: TextStyle(fontSize: 20),
+                        ),
+                        SizedBox(width: 4),
+                        Icon(Icons.verified, color: Colors.blue),
+                      ],
+                    ),
+                    SizedBox(height: 10),
+                    Row(
+                      children: [
+                        Icon(Icons.tiktok, size: 18),
+                        Text(
+                          'noparuj56',
+                          style: TextStyle(
+                            fontWeight: FontWeight.w100,
+                            fontSize: 18,
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 10),
+                    Row(
+                      children: [
+                        ElevatedButton(
+                          onPressed: () => Navigator.pushNamed(context, '/'),
+                          child: Text('ติดตาม', style: TextStyle(fontSize: 15)),
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.deepPurpleAccent.shade100,
+                            foregroundColor: Colors.white,
+                            padding: EdgeInsets.symmetric(
+                              horizontal: 130,
+                              vertical: 10,
+                            ),
+                          ),
+                        ),
+                        SizedBox(width: 10),
+                        Icon(Icons.share, size: 30),
+                      ],
+                    ),
+                    SizedBox(height: 20,),
+                    Row(
+                      children: [
+                        Image.network(
+                          "https://plus.unsplash.com/premium_photo-1661963423747-686b37c59aea?q=80&w=1004&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                          width: 160,
+                          height: 160,
+                        ),
+                        SizedBox(width:50,),
+                        Image.network(
+                          "https://plus.unsplash.com/premium_photo-1661963423747-686b37c59aea?q=80&w=1004&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                          width: 160,
+                          height: 160,
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               ),
