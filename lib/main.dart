@@ -206,9 +206,9 @@ class MyHomePage extends StatelessWidget {
                           children: [
                             Text('การศึกษา'),
                             Text(
-                              'วิทยาลัยเทคโนโลยีภาคตะวันออก (อี.เทค)',
+                              'วิทยาลัยเทคโนโลยีภาคตะวันออก(อี.เทค)',
                               style: TextStyle(
-                                fontSize: 17,
+                                fontSize: 15,
                                 fontWeight: FontWeight.w200,
                               ),
                             ),
