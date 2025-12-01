@@ -405,19 +405,23 @@ class SecondPage extends StatelessWidget {
                         Icon(Icons.share, size: 30),
                       ],
                     ),
-                    SizedBox(height: 20,),
-                    Row(
+                    SizedBox(height: 20),
+                    Column(
                       children: [
-                        Image.network(
-                          "https://plus.unsplash.com/premium_photo-1661963423747-686b37c59aea?q=80&w=1004&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                          width: 160,
-                          height: 160,
-                        ),
-                        SizedBox(width:50,),
-                        Image.network(
-                          "https://plus.unsplash.com/premium_photo-1661963423747-686b37c59aea?q=80&w=1004&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                          width: 160,
-                          height: 160,
+                        Row(
+                          children: [
+                            Image.network(
+                              "https://plus.unsplash.com/premium_photo-1661963423747-686b37c59aea?q=80&w=1004&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                              width: 160,
+                              height: 160,
+                            ),
+                            SizedBox(width: 50),
+                            Image.network(
+                              "https://plus.unsplash.com/premium_photo-1661963423747-686b37c59aea?q=80&w=1004&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                              width: 160,
+                              height: 160,
+                            ),
+                          ],
                         ),
                       ],
                     ),
