@@ -274,7 +274,7 @@ class SecondPage extends StatelessWidget {
                       Container(
                         padding: EdgeInsets.symmetric(
                           vertical: 30,
-                          horizontal: 10,
+                          horizontal: 2,
                         ),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.center,
